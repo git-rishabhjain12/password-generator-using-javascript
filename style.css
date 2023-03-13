@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: skyblue;
+}
+
+#main {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: skyblue;
+    padding: 2rem;
+    border: 5px solid black;
+    border-radius: 10px;
+    transform: translate(-50%, -50%)
+}
+
+label {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+input {
+    border: 2px solid green;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+#btns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0.7rem;
+}
+
+#generatePasswordbtn {
+    background-color: skyblue;
+    color: black;
+    padding: 10px;
+    width: 40%;
+    display: inline-block;
+    align-items: center;
+    font-weight: 700;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+#generatePasswordbtn:hover {
+    background-color: white;
+    color: black;
+}
+
+
+#copyPasswordbtn {
+    background-color: skyblue;
+    color: black;
+    padding: 10px;
+    width: 40%;
+    display: inline-block;
+    align-items: center;
+    font-weight: 700;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+
+#copyPasswordbtn:hover {
+    background-color: white;
+    color: black;
+}
+
+@media all and (max-width:1042px) {
+    label {
+        text-align: center;
+    }
+}
+
+@media all and (max-width:750px) {
+    label {
+        font-size: 1.6rem;
+    }
+}
+
+
+@media all and (max-width:600px) {
+    #main {
+        padding: 0.5rem;
+    }
+}
+
+
+@media all and (max-width:500px) {
+    input {
+        margin-bottom: 0;
+    }
+
+    #btns {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #btns #generatePasswordbtn {
+        margin: 10px;
+    }
+}
