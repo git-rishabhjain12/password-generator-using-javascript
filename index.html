@@ -17,6 +17,7 @@
         <div id="main">
             <label for="">Random Password Generator</label>
             <input type="text" placeholder="Create Password" id="password">
+            <!-- <i class="fa-regular fa-clipboard"></i> -->
             <div id="btns">
                 <button id="generatePasswordbtn" onclick="generatePassword()">Generate</button>
                 <button id="copyPasswordbtn" onclick="copyPassword()">Copy</button>
@@ -38,11 +39,11 @@
             output.value = password
         }
 
-        // function copyPassword() {
-        //     let copyText = document.getElementById('password')
-        //     copyText.select()
-        //     console.log(copyText.value)
-        // }
+        function copyPassword() {
+            let copyText = document.getElementById('password')
+            copyText.select()
+            navigator.clipboard.writeText(copyText.value)
+        }
 
     </script>
 </body>
